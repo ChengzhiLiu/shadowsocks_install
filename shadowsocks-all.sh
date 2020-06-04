@@ -457,7 +457,7 @@ if   [ "${selected}" == "1" ]; then
     "local_address":"127.0.0.1",
     "local_port":1080,
     "password":"${shadowsockspwd}",
-    "timeout":300,
+    "timeout":600,
     "method":"${shadowsockscipher}",
     "fast_open":${fast_open}
 }
@@ -474,7 +474,7 @@ elif [ "${selected}" == "2" ]; then
     "local_address":"127.0.0.1",
     "local_port":1080,
     "password":"${shadowsockspwd}",
-    "timeout":120,
+    "timeout":600,
     "method":"${shadowsockscipher}",
     "protocol":"${shadowsockprotocol}",
     "protocol_param":"",
@@ -497,7 +497,7 @@ elif [ "${selected}" == "3" ]; then
     "local_port":1080,
     "password":"${shadowsockspwd}",
     "method":"${shadowsockscipher}",
-    "timeout":300
+    "timeout":600
 }
 EOF
 elif [ "${selected}" == "4" ]; then
@@ -516,7 +516,7 @@ elif [ "${selected}" == "4" ]; then
     "server":${server_value},
     "server_port":${shadowsocksport},
     "password":"${shadowsockspwd}",
-    "timeout":300,
+    "timeout":600,
     "user":"nobody",
     "method":"${shadowsockscipher}",
     "fast_open":${fast_open},
@@ -532,7 +532,7 @@ EOF
     "server":${server_value},
     "server_port":${shadowsocksport},
     "password":"${shadowsockspwd}",
-    "timeout":300,
+    "timeout":600,
     "user":"nobody",
     "method":"${shadowsockscipher}",
     "fast_open":${fast_open},
